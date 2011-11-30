@@ -1,0 +1,23 @@
+The flags of all countries in the world in one sprite.
+Original work by: https://github.com/lafeber/world-flags-sprite
+
+I've just corrected a small mistake in the original CSS and bundled it all up to be easily used with the Rails 3.1 asset pipeline.
+
+Installation:
+
+    gem 'world_flags', :git => 'git://github.com/djonasson/world_flags.git'
+
+    In your app/assets/stylesheets/application.css, require the CSS that you
+    want to use:
+
+    = require world_flags/flags16
+    or
+    = require world_flags/flags32
+
+Usage:
+
+  <ul class="f32">
+    <li class="flag ar">Argentina</li>
+    <li class="flag au">Australia</li>
+    <li class="flag at">Austria</li>
+  </ul>
